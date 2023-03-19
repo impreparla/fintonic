@@ -1,0 +1,297 @@
+  /*-------------------------*/
+  /* ESTILOS WEB FINTONIC
+     -----------------------*/
+
+  
+  /*--------------------------*/ 
+  /*      estilos generales*/
+  /*--------------------------*/
+      *{box-sizing: border-box;}
+
+      body {
+        margin: 0;
+        line-height: 1.4em;
+        font-family: "Work Sans",arial,sans-serif;
+      }
+
+      ul,li,h1,h2,h3, figure{
+           margin: 0px;
+           padding: 0px;
+     }
+
+     li{
+      list-style-type: none;
+     }
+
+     a {
+       text-decoration: none;
+     }
+
+     figcaption{
+      text-align: center;
+      padding: 1em;
+     }
+
+     h1,h2,h3,h4, h5{
+      font-family: 'Oswald', sans-serif; 
+      font-weight: 600;
+      margin:0;
+     }
+ 
+
+     .noSeparar{
+      white-space: nowrap ;
+     }
+
+     .paddingLateral{
+        padding-right: 50px;
+        padding-left: 50px;
+    }
+
+ 
+    /*--------------------------*/ 
+    /*       estructura      */
+    /*--------------------------*/
+    .contenedorPrincipal{
+      max-width: 1700px;
+      margin:0 auto;
+    }
+
+    .anchoMaximo {
+      max-width: 1350px;
+      margin:0 auto;
+    }
+ 
+    .grid{
+      display: grid;
+      grid-auto-flow:column;
+      justify-content: space-evenly;
+    
+    }
+
+  
+ 
+    /*--------------------------*/ 
+    /*       header principal y nav       */
+    /*--------------------------*/
+
+    .cabeceraPrincipal.grid{
+      grid-template-columns: 1fr; /* para que una única columna ocupe todo el ancho del padre */
+    }
+
+    .cabeceraPrincipal .contenidoCabecera{
+      width: 100%; /* para que esta caja ocupe el 100% */
+      align-content: center;
+      justify-content: space-between;
+      gap: 20px;
+    }
+    .cabeceraPrincipal{
+      
+      padding: 15px 30px; 
+      min-height: 180px;     
+      background: linear-gradient(90deg, rgba(0, 0, 0, 0.6), transparent),
+                  url('../imagenes/fondo-cabecera.jpg') center/cover, 
+                  #292929;
+      
+    }
+
+    .cabeceraPrincipal h1{
+      align-self: center;
+   
+      color:#CCBB33;
+      font-size: 2.5em;
+      line-height: 1.2em;
+      text-align: right;
+
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    }
+
+    .logo{
+      width: 280px;
+    }
+
+    .menuMovil{
+      display: none;
+    }
+
+    nav ul.grid{
+        
+        justify-content: center;
+        align-content: center;
+    }
+    nav {
+         background: #000;
+         text-align: center;
+    }
+ 
+
+    nav li a {
+      padding: 15px 10px;
+      display: inline-block;
+      color: #CCBB33;           
+    }
+
+
+     nav li a:hover {
+       background: #CCBB33;           
+       color: #fff;
+     }
+
+   
+    /*--------------------------------------*/ 
+    /*   main y secciones*/
+    /*--------------------------------------*/
+    
+
+      main{
+        display:block;
+        background: #FAFCFA;
+      }
+
+      main figure img{
+        width: 100%;
+      }
+      .cabeceraSeccion{
+        padding: 0 60px;
+        background: url('../imagenes/fondo-seccion.jpg') center top/cover;
+      }
+
+      .cabeceraSeccion .contenidoHeader{
+        display: grid;
+        grid-template-columns: 25% 55%;
+      
+        justify-content: center;
+        align-content: center;
+        gap: 25px;
+        min-height: 390px;
+  
+        
+      }
+
+      .cabeceraSeccion h2{
+        grid-row: 1/3;
+        text-align: center;
+        line-height: 1.5em;
+        font-size: 1.9em;
+      }
+
+      .cabeceraSeccion h2, .cabeceraSeccion p{
+        margin:0;
+        padding: 15px;
+        border:1px solid #dddddd;
+        background: rgba(255, 255, 255, 0.75);
+        text-shadow: 1px 1px 2px #FFF , -1px -1px 2px #FFF;
+
+        box-shadow: 2px 2px 8px 4px rgba(0,0,0,0.2);
+         
+      }
+
+      .cabeceraSeccion h2{
+        border-radius: 10px 0 0 10px;
+      }
+
+      .cabeceraSeccion p{
+        border-radius: 0 10px 10px  0 ;
+        color:#000;
+      }
+
+      .contenidoSeccion{
+        padding:30px 50px;
+       
+      }
+
+      .contenidoSeccion h3{
+        font-size: 3em;
+        line-height: 1.3em;
+      }
+
+      .contenidoSeccion h3+p{
+        font-size: 1.5em;
+        line-height: 1.3em;
+        
+      }
+      
+    .cajasSeccion {
+        margin-top: 60px;
+        gap:30px;
+     }
+
+    .cajasSeccion figure{
+        margin-bottom: 1em;
+    }
+
+    .cajasSeccion h4 {
+        margin-bottom: 0.5em;
+        color: #1B1B1B;
+        font-size: 1.6em;  
+        line-height: 1.2em;  
+    }
+ 
+    /*--------------------------*/ 
+         /*footer de pagina*/
+    /*--------------------------*/ 
+
+    footer{
+
+      text-align:center; 
+    
+      background: #282828;
+    
+    }
+
+    .footerInfo.grid{
+      gap: 50px;
+      grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    
+    .footerInfo{
+      
+      padding: 30px;
+      margin-bottom: 20px;
+    }
+
+    footer h5{
+      font-size: 1.4em;
+      margin-bottom: 15px;
+
+      color:#c7c7c7;
+    }
+
+
+    
+
+    .footerInfo p {
+      margin: 0;
+
+      color:#9b9b9b;
+
+    }
+
+    .footerInfo a{
+      color: #CCBB33;
+    }
+
+    .footerInfo a:hover{
+      color: #f9f6e2;
+    }
+
+    .footerInfo .telefono{
+      margin-top: 10px;
+    }
+
+
+
+    .copyright{
+      padding: 15px 0;
+      background: #9d8e22;
+      color:#f1ebc2;
+    }
+
+  
+
+    footer small{
+      font-size: 1em;
+      font-weight: bold;
+    }
+ 
